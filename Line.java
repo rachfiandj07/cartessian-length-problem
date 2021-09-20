@@ -14,4 +14,13 @@ class Line {
     public Point getPoint2() {
       return this.point2;
     }
+
+    public double calculateLength() {
+      double xDistance = point1.getX() - point2.getX();
+      double yDistance = point1.getY() - point2.getY();
+
+      return Math.sqrt(
+        (xDistance * xDistance) + (yDistance * yDistance)
+      );
+    }
 }
